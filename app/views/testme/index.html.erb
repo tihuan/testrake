@@ -1,0 +1,27 @@
+<h1>Bug Report</h1>
+<button class="btn btn-danger">Test This</button>
+<b><p>Request Headers:</p></b>
+<%= request.headers.inspect %>
+<b><p>Full info:</p></b>
+<%= @info %>
+<b><p>Browser.to_s</p></b>
+<%= browser.to_s %>
+<b><p>Browser.version</p></b>
+<%= browser.version %>
+<b><p>Browser.full_version</p></b>
+<%= browser.full_version %>
+<b><p>Client IP:</p></b>
+<%= request.remote_ip %>
+<b><p>UUID:</p></b>
+<%= request.uuid %>
+<b><p>Original URL:</p></b>
+<%= request.original_url %>
+<b><p>Original Full Path:</p></b>
+<%= request.original_fullpath %>
+<b><p>Cookies:</p></b>
+<% request.cookie_jar.each do |c| %>
+  <p><%= "#{c[0]}:" %></p>
+  <p><%= "#{c[1]}" %></p>
+<% end %>
+<b><p id="plugins">PlugIns:</p></b>
+<button id="check-external-link">Check block external link?</button>
