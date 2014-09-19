@@ -23,7 +23,6 @@ var popupBlockerChecker = {
         }
     };
 
-console.log("hi!");
-
 // var popup = window.open("http://www.google.ca", '_blank');
 // popupBlockerChecker.check(popup);
+
