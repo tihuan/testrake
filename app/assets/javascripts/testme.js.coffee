@@ -16,11 +16,20 @@ ready = ->
   pluginInfo += plugin
   console.log(pluginInfo)
 
+
   sayHi = ->
+    newTab = window.open("http://www.google.com", "_blank")
     console.log "hi!"
+    newTab.document.cookie = "externalAllowed: true"
+    matched = newTab.document.cookie.match(/externalAllowed/).input
+    console.log matched
+    newTab.close()
+
+
 
   $("#check-external-link").bind
     click: sayHi
+
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
