@@ -25,11 +25,8 @@ ready = ->
     console.log matched
     newTab.close()
 
-
-
   $("#check-external-link").bind
     click: sayHi
-
 
 $(document).ready(ready)
 $(document).on('page:load', ready)
