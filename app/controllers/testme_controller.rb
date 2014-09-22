@@ -7,5 +7,6 @@ class TestmeController < ApplicationController
     request.env['REMOTE_ADDR']
     p @info
     p "\n\n\n\n\n\n WHAT?????"
+    @track_id = SecureRandom.uuid
   end
 end

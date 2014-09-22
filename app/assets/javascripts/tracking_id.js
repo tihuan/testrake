@@ -1,4 +1,4 @@
 $(function() {
   var trackingId = trackID;
-  alert(trackID);
+  console.log(trackID);
 });

@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Ahoy to track users
+gem 'ahoy_matey'
+gem 'activeuuid', '>= 0.5.0'
 # Modernizr
 gem 'modernizr-rails'
 # Twitter Bootstrap

@@ -15,6 +15,7 @@ ready = ->
   pluginInfo = 2
   plugin = 3
   pluginInfo += plugin
+  pluginInfo += plugin
   console.log(pluginInfo)
 
 
