@@ -4,11 +4,12 @@
 ready = ->
 
   $window = $(window);
-  console.log("HI!!!");
-  console.log($window.innerWidth());
-  console.log($window.innerHeight());
-  sessionStorage.setItem('window_width', $window.innerWidth());
-  sessionStorage.setItem('window_height', $window.innerHeight());
+  console.log($window.trackID)
+  console.log("HI!!!")
+  console.log($window.innerWidth())
+  console.log($window.innerHeight())
+  sessionStorage.setItem('window_width', $window.innerWidth())
+  sessionStorage.setItem('window_height', $window.innerHeight())
 
   $("#plugins").append(" HI!!!!! PLUGIN: " + navigator.plugins)
   pluginInfo = 2
