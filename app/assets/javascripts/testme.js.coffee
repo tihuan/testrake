@@ -18,7 +18,7 @@ ready = ->
   pluginInfo += plugin
   console.log(pluginInfo)
 
-
+# Code to this domain block
   sayHi = ->
     newTab = window.open("http://www.google.com", "_blank")
     console.log "hi!"
