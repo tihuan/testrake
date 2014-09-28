@@ -4,7 +4,7 @@
 ready = ->
 
   $window = $(window);
-  console.log($window.trackID)
+  # console.log($window.trackID)
   console.log("HI!!!")
   console.log($window.innerWidth())
   console.log($window.innerHeight())
@@ -20,11 +20,13 @@ ready = ->
 
 # Code to this domain block
   sayHi = ->
-    newTab = window.open("http://www.google.com", "_blank")
+    newTab = window.open("http://www.google.ca", '_blank')
     console.log "hi!"
     newTab.document.cookie = "externalAllowed: true"
-    matched = newTab.document.cookie.match(/externalAllowed/).input
+    matched = if newTab.document.cookie.match(/externalAllowed/) then true else false
+    console.log "what's matched?"
     console.log matched
+    console.log("match complete")
     newTab.close()
 
   $("#check-external-link").bind
